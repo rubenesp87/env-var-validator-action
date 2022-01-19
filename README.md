@@ -1,5 +1,3 @@
-# env-var-validator-action
-
 # Environment variable validator
 
 Check that an environment variable file not contains empty values
