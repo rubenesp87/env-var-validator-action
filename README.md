@@ -10,13 +10,13 @@ Check that an environment variable file not contains empty values
 ## Example usage
 
 ```yaml
-uses: rubenesp87/env-var-validator-action@latest
+uses: rubenesp87/env-var-validator-action@0.1.0
 with:
   filepath: '.env'
 ```
 
 ```yaml
-uses: rubenesp87/env-var-validator-action@latest
+uses: rubenesp87/env-var-validator-action@0.1.0
 with:
   filepath: 'packages/.env.app'
 ```
