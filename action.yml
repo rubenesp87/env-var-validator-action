@@ -1,0 +1,18 @@
+name: 'Environment variable validator'
+description: 'Environment variable validator'
+inputs:
+  filepath:
+    description: 'Filepath to validate the env vars'
+    required: true
+    default: '.env'
+outputs:
+  is-valid:
+    description: "Return if the env file is valid"
+runs:
+  using: "composite"
+  steps:
+    - run: ${{ github.action_path }}/validator.sh
+      shell: bash
+branding:
+  icon: 'check-square'
+  color: 'gray-dark'
