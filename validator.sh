@@ -10,6 +10,7 @@ read_file()
   if (( ${#invalid[@]} )); then
     echo "ERROR!! There are some invalid environment variables:"
     printf '%s\n' "${invalid[@]}"
+    exit 1
   fi
 }
 
