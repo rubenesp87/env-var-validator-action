@@ -13,6 +13,8 @@ runs:
   steps:
     - run: ${{ github.action_path }}/validator.sh
       shell: bash
+      env:
+        FILEPATH: ${{ inputs.filepath }}
 branding:
   icon: 'check-square'
   color: 'gray-dark'
