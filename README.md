@@ -12,11 +12,11 @@ Check that an environment variable file not contains empty values
 ```yaml
 uses: rubenesp87/env-var-validator-action@latest
 with:
-  version: '.env'
+  filepath: '.env'
 ```
 
 ```yaml
 uses: rubenesp87/env-var-validator-action@latest
 with:
-  version: 'packages/.env.app'
+  filepath: 'packages/.env.app'
 ```
